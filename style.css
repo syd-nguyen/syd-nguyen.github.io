@@ -12,7 +12,7 @@
 }
 
 * {
-    background-color: #00070d;
+    background-color: var(--beige);
 }
 
 body {
