@@ -1,0 +1,360 @@
+:root {
+    --beige: #f1e9da;
+    --darkBeige: #a9a499;
+    --yellow: #ffb829;
+    --orange: #ff7d1a;
+    --teal: #48b5b3;
+}
+
+@font-face {
+    font-family: Sandwich;
+    src: url("Sandwich-Regular.otf") format("opentype");
+}
+
+* {
+    background-color: #00070d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    margin: 100px 200px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* header with navigation */
+
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerIcon {
+    width: 40px;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+
+.headerLinks {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--darkBeige);
+    background-color: transparent !important;
+}
+
+.headerLinks a {
+    font-family: "Tilt Warp";
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--darkBeige);
+}
+
+.headerLinks a:hover {
+    color: var(--teal);
+}
+
+.headerLinks p {
+    margin-top: 20px;
+}
+
+/* landing */
+
+#landingWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingHeading {
+    margin-left: 200px;
+    margin-top: -20px;
+}
+
+.landingHeading p {
+    font-family: "Tilt Warp";
+}
+
+#hi {
+    font-size: 250px;
+    margin: 0 0 0 155px;
+    /* top, right, bottom, left */
+    color: var(--yellow);
+}
+
+#im {
+    font-size: 250px;
+    margin: -150px 0 0 40px;
+    color: var(--teal);
+}
+
+#apostrophe {
+    font-size: 180px;
+    margin: -320px 0 0 110px;
+    color: var(--teal);
+}
+
+#syd {
+    font-size: 250px;
+    margin: -55px 0 0 60px;
+    color: var(--teal);
+}
+
+#subhead {
+    font-family: Sandwich;
+    font-size: 43px;
+    margin: -60px 0 0 280px;
+}
+
+.landingImage {
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 60%;
+}
+
+/* about (and all home) */
+
+#aboutWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#aboutRight {
+    margin-left: 50px;
+}
+
+#aboutText {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#aboutImg {
+    /* add stuff about sizing and rotation and whatnot */
+}
+
+/* used for all headings on homepage (ie. who i am, i make things, and let's talk) */
+.homeHeading {
+    font-family: "Tilt Warp";
+    font-size: 70px;
+    color: var(--teal);
+    margin: 0;
+}
+
+/* used for all headings on pages other than the homepage, just the homepage one but smaller */
+.pageHeading {
+    font-family: "Tilt Warp";
+    font-size: 55px;
+    color: var(--teal);
+    margin: 0;
+}
+
+.copyText {
+    font-family: Sandwich;
+    font-size: 40px;
+    line-height: 35px;
+    /* white-space: pre-line;*/
+    margin: 0;
+}
+
+div.homeButton {
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 5px 35px 2px 35px;
+    background-color: var(--yellow);
+    display: inline-block;
+    text-align: center;
+}
+
+div.homeButton:hover {
+    transform: rotate(5deg) scale(1.03);
+}
+
+a.homeButton {
+    font-family: Sandwich;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    background-color: inherit;
+}
+
+/* work */
+
+#workWrap {
+    margin: 100px 200px;
+}
+
+.workHeading {
+    text-align: center;
+}
+
+#theseAreThose {
+    padding-left: 300px;
+}
+
+#workColumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+.workColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px; /* right and left each being 10px makes a total gap of 20px */
+}
+
+.workColumn img {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+        filter: drop-shadow(0 0 20px #a9a49955); /* darkBeige with reduced opacity */
+
+}
+
+.workColumn img:hover {
+        filter: drop-shadow(0 0 20px var(--darkBeige));
+
+    transform: scale(1.03);
+}
+
+#firstOnLeft {
+    margin-top: 100px;
+}
+
+#firstOnRight {
+    margin-top: 30px;
+}
+
+/* contact */
+
+#contactLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#contactLinks > a {
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    padding: 5px 30px 2px 30px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* footer */
+
+footer {
+    margin: 0;
+}
+
+footer,
+footer > * {
+    background-color: var(--teal) !important;
+}
+
+footer > a {
+    font-family: "Tilt Warp";
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+
+/* all other pages */
+
+.pageTitle {
+    font-family: "Tilt Warp";
+    font-size: 100px;
+    color: var(--teal);
+    margin: 50px;
+    text-align: center;
+}
+
+/* about.html */
+
+/* description */
+
+#descWrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -60px !important;
+}
+
+#descText {
+    margin-left: 30px;
+    align-content: center;
+}
+
+#descSig {
+    background-color: transparent !important;
+    margin-left: 70%;
+    transform: rotate(-7deg);
+    width: 280px;
+}
+
+/* contact.html */
+
+#formWrap {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+        grid-area: form;
+
+}
+
+#formWrap > input,
+#formWrap > textArea {
+    font-family: Sandwich;
+    font-size: 40px;
+    color: black;
+    padding: 5px 10px 2px 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--darkBeige);
+    border-radius: 10px;
+    box-sizing: border-box; /* ensures that the padding and borders are included in the total size of the elements */
+}
+
+#formWrap > input[type="submit"] {
+    color: var(--darkBeige);
+    text-align: left;
+}
+
+#formWrap > input[type="submit"]:hover {
+    color: var(--yellow);
+}
+
+::placeholder {
+    color: var(--darkBeige);
+}
+
+#contactTextAndLinks {
+    grid-area: textAndLinks;
+}
+
+#contactImg {
+    grid-area: image;
+    width: 400px;
+    margin-left: 100px;
+}
+
+#contactWrap {
+    display: grid;
+    grid-template-areas:
+        "textAndLinks image"
+        "form image"
+        "form image";
+}
